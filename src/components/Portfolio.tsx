@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
-import faithImage from "@/assets/Calligraphy-1.jpg";
+import faithImage from "@/assets/calligraphy-1.jpg";
 import natureImage from "@/assets/naturescape-2.jpg";
 import weddingArtImage from "@/assets/wedding-art-2.jpg";
 import tableDecorImage from "@/assets/table-decor-4.jpg";
