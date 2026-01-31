@@ -81,7 +81,7 @@ const Footer = () => {
               <motion.a
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                href="mailto:juveriya.art@gmail.com"
+                href="mailto:juveriyasartjourney@gmail.com"
                 className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all"
                 aria-label="Email"
               >

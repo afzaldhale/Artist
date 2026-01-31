@@ -12,36 +12,23 @@ const Hero = () => {
       {/* Content */}
       <div className="flex min-h-screen flex-col justify-center px-6">
         <div className="mx-auto max-w-3xl text-center pt-24 md:pt-28">
-          
-          {/* Name */}
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9 }}
-            className="mb-4 font-serif text-5xl font-bold text-foreground md:text-7xl"
-          >
-            Juveriya
-          </motion.h1>
 
-          {/* Role */}
-          <motion.p
-            initial={{ opacity: 0, y: 25 }}
+          {/* HERO LOGO (Primary Identity) */}
+          <motion.img
+            src={heroLogo}
+            alt="Juveriya Art Journey Logo"
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            className="mb-3 text-xl text-foreground/90 md:text-2xl"
-          >
-            Artist
-          </motion.p>
-
-          {/* Subtitle */}
-          <motion.p
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.35, duration: 0.8 }}
-            className="mb-6 text-lg italic text-foreground/80 md:text-xl"
-          >
-            Documenting my journey as an artist
-          </motion.p>
+            transition={{ duration: 1 }}
+            className="
+              mx-auto
+              mb-10
+              w-56
+              md:w-72
+              pointer-events-none
+              select-none
+            "
+          />
 
           {/* Quote */}
           <motion.p
@@ -102,31 +89,13 @@ const Hero = () => {
               <Mail size={20} />
             </a>
           </motion.div>
-
-          {/* SMALL DECORATIVE LOGO */}
-          <motion.img
-            src={heroLogo}
-            alt=""
-            aria-hidden="true"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 0.35, y: 0 }}
-            transition={{ delay: 1.1, duration: 1 }}
-            className="
-              mx-auto
-              mt-16
-              w-40
-              md:w-48
-              pointer-events-none
-              select-none
-            "
-          />
         </div>
 
         {/* Stats */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.3, duration: 0.8 }}
+          transition={{ delay: 1.1, duration: 0.8 }}
           className="mx-auto mt-20 grid max-w-2xl grid-cols-3 gap-8 border-t border-border/30 pt-12"
         >
           {[
